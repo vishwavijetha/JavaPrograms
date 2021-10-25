@@ -1,4 +1,4 @@
-package concepts;
+package misc;
 
 public class Shopping {
 	public static void main(String[] args) {

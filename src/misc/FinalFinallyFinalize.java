@@ -1,4 +1,4 @@
-package concepts;
+package misc;
 
 class Parent {
 	public static final int price = 100;

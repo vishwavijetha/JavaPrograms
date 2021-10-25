@@ -1,12 +1,15 @@
 package strings;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class CheckDuplicateCharacters {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// O(n2)
 		String str = "Vishwa Vijetha";
 		Map<Character, Integer> map = new HashMap<>();
 		for (int i = 0; i < str.length(); i++) {
@@ -20,6 +23,15 @@ public class CheckDuplicateCharacters {
 		for (Character c : map.keySet()) {
 			if (map.get(c) > 1)
 				System.out.println("duplicate character : " + c + " ====== " + " count : " + map.get(c));
+		}
+		
+		// O(n)
+		char[] cArray = str.toCharArray();
+		Set<Character> set = new HashSet<>();
+		for(char c: cArray) {
+			if (!set.add(c)) {
+				System.out.println(c);
+			}
 		}
 	}
 

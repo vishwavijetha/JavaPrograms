@@ -1,4 +1,4 @@
-package concepts;
+package misc;
 
 public class EcommApp {
 
